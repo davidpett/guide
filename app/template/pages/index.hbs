@@ -1,0 +1,22 @@
+---
+title: Style Guide
+---
+
+<div class="styleguide">
+  <nav class="styleguide-nav">
+    <ul>
+      {{#each components}}
+        <li><a href="#{{@key}}">{{@key}}</a></li>
+      {{/each}}
+    </ul>
+  </nav>
+
+  <section class="styleguide-content">
+    <header>
+      <h1>{{title}}</h1>
+      <p>This is the styleguide</p>
+    </header>
+    {{> buttons}}
+    {{> lists}}
+  </section>
+</div>

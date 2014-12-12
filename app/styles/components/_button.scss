@@ -1,0 +1,90 @@
+.btn {
+  border: 1px solid;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2;
+  overflow: hidden;
+  text-align: center;
+  zoom: 1;
+}
+
+
+
+
+
+  /**
+   *
+   * BUTTON COLORS
+   *
+   */
+  .btn--standard {
+    background-color: $color-standard;
+    border-color: $color-standard;
+    color: #ffffff;
+  }
+
+  .btn--blue {
+    background-color: $color-blue;
+    border-color: $color-blue;
+    color: #ffffff;
+  }
+
+  .btn--green {
+    background-color: $color-green;
+    border-color: $color-green;
+    color: #ffffff;
+  }
+
+  .btn--red {
+    background-color: $color-red;
+    border-color: $color-red;
+    color: #ffffff;
+  }
+
+  .btn--outline-standard {
+    background-color: transparent;
+    color: $color-standard;
+  }
+
+  .btn--outline-blue {
+    background-color: transparent;
+    color: $color-blue;
+  }
+
+  .btn--outline-green {
+    background-color: transparent;
+    color: $color-green;
+  }
+
+  .btn--outline-red {
+    background-color: transparent;
+    color: $color-red;
+  }
+
+
+
+
+
+  /**
+   *
+   * BUTTON SIZES
+   *
+   */
+  .btn--small {
+    font-size: 0.85em;
+    padding: 0 10px;
+  }
+
+  .btn--medium {
+    padding: 0 20px;
+  }
+
+  .btn--large {
+    line-height: 2.5;
+    padding: 0 30px;
+  }
+
+  .btn--x-large {
+    line-height: 3;
+    padding: 0 40px;
+  }

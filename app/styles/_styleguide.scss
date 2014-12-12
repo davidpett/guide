@@ -1,0 +1,42 @@
+$susy: (columns: 12, container: 1024px, global-box-sizing: border-box);
+
+.styleguide {
+  @include container;
+}
+
+  .styleguide-nav {
+    @include span(3);
+    position: fixed;
+  }
+
+  .styleguide-content {
+    @include span(9 last);
+  }
+
+
+
+
+
+  .styleguide__section {
+    margin-top: 50px;
+  }
+
+  .styleguide__list {
+    overflow: hidden;
+  }
+
+  .styleguide-block {
+    @include gallery(6);
+  }
+
+    .styleguide-block__item {
+      background-color: #fff;
+      border: 1px solid $color-gray;
+      display: block;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    .styleguide-block__code {
+      display: block;
+    }

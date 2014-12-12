@@ -1,0 +1,25 @@
+<section id="list" class="styleguide__section">
+
+  <header class="styleguide__section-header">
+    <h1 class="styleguide__section-title">list</h1>
+    <pre>\{{component 'list' options}}</pre>
+    <pre>options: {
+  style:  "{{#each components.list.styles}}{{style}}{{#unless @last}}|{{/unless}}{{/each}}" [standard],
+}</pre>
+  </header>
+
+  <h3 id="style-colors" class="styleguide__list-title">styles</h3>
+  <div class="styleguide__list">
+    {{#each components.list.styles}}
+      <div class="styleguide-block">
+        <div class="styleguide-block__item">
+          <h4 class="styleguide-block__title">{{color}}</h4>
+          {{component 'list' style=style}}
+          <pre class="styleguide-block__code">&#123;&#123;component 'list' style="{{style}}"&#125;&#125;</pre>
+          <pre class="styleguide-block__code">{{component 'list' style=style unsafe=true}}</pre>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+</section>

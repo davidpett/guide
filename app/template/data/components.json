@@ -1,0 +1,35 @@
+{
+  "button": {
+    "colors": [{
+        "color": "standard"
+      }, {
+        "color": "blue"
+      }, {
+        "color": "green"
+      }, {
+        "color": "red"
+      }, {
+        "color": "outline-standard"
+      }, {
+        "color": "outline-blue"
+      }, {
+        "color": "outline-green"
+      }, {
+        "color": "outline-red"
+      }
+    ],
+    "sizes": [{
+        "size": "small"
+      }, {
+        "size": "medium"
+      }, {
+        "size": "large"
+      }, {
+        "size": "x-large"
+      }
+    ]
+  },
+  "list": {
+
+  }
+}

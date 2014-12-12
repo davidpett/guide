@@ -1,0 +1,42 @@
+<section id="button" class="styleguide__section">
+
+  <header class="styleguide__section-header">
+    <h1 class="styleguide__section-title">button</h1>
+    <pre>\{{component 'button' options}}</pre>
+    <pre>options: {
+  title:  "" [Hello World],
+  url:    "" [#],
+  color:  "{{#each components.button.colors}}{{color}}{{#unless @last}}|{{/unless}}{{/each}}" [standard],
+  size:   "{{#each components.button.sizes}}{{size}}{{#unless @last}}|{{/unless}}{{/each}}" [medium]
+}</pre>
+  </header>
+
+  <h3 id="button-colors" class="styleguide__list-title">colors</h3>
+  <div class="styleguide__list">
+    {{#each components.button.colors}}
+      <div class="styleguide-block">
+        <div class="styleguide-block__item">
+          <h4 class="styleguide-block__title">{{color}}</h4>
+          {{component 'button' color=color}}
+          <code class="styleguide-block__code">&#123;&#123;component 'button' color="{{color}}"&#125;&#125;</code>
+          <pre class="styleguide-block__code">{{component 'button' color=color unsafe=true}}</pre>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <h3 id="button-sizes" class="styleguide__list-title">sizes</h3>
+  <div class="styleguide__list">
+    {{#each components.button.sizes}}
+      <div class="styleguide-block">
+        <div class="styleguide-block__item">
+          <h4 class="styleguide-block__title">{{size}}</h4>
+          {{component 'button' size=size}}
+          <code class="styleguide-block__code">&#123;&#123;component 'button' size="{{size}}"&#125;&#125;</code>
+          <pre class="styleguide-block__code">{{component 'button' size=size unsafe=true}}</pre>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+</section>
