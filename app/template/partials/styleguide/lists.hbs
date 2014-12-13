@@ -1,22 +1,22 @@
 <section id="list" class="styleguide__section">
 
   <header class="styleguide__section-header">
-    <h1 class="styleguide__section-title">list</h1>
-    <pre>\{{component 'list' options}}</pre>
-    <pre>options: {
+    <h1 class="styleguide__section-title h2">list</h1>
+    <pre class="fixed">\{{component 'list' options}}</pre>
+    <pre class="fixed">options: {
   style:  "{{#each components.list.styles}}{{style}}{{#unless @last}}|{{/unless}}{{/each}}" [standard],
 }</pre>
   </header>
 
-  <h3 id="style-colors" class="styleguide__list-title">styles</h3>
+  <h3 id="style-colors" class="styleguide__list-title h3">styles</h3>
   <div class="styleguide__list">
     {{#each components.list.styles}}
       <div class="styleguide-block">
         <div class="styleguide-block__item">
-          <h4 class="styleguide-block__title">{{color}}</h4>
+          <h4 class="styleguide-block__title h4">{{color}}</h4>
           {{component 'list' style=style}}
-          <pre class="styleguide-block__code">&#123;&#123;component 'list' style="{{style}}"&#125;&#125;</pre>
-          <pre class="styleguide-block__code">{{component 'list' style=style unsafe=true}}</pre>
+          <pre class="styleguide-block__code fixed">&#123;&#123;component 'list' style="{{style}}"&#125;&#125;</pre>
+          <pre class="styleguide-block__code fixed">{{component 'list' style=style unsafe=true}}</pre>
         </div>
       </div>
     {{/each}}
